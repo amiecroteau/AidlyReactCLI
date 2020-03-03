@@ -3,6 +3,7 @@ import {Component} from 'react';
 import {Modal, TextInput, Text, TouchableHighlight, View, StyleSheet}
 from 'react-native';
 import Slider from '@react-native-community/slider';
+
 class ModalExample extends Component {
    state = {
       modalVisible: false,
@@ -19,9 +20,11 @@ class ModalExample extends Component {
                visible = {this.state.modalVisible}
                onRequestClose = {() => { console.log("Modal has been closed.") } }>
                   <Text style = {styles.titleText}>Register</Text>  
-               
+                 
+
                <View style = {styles.modal}>
                   <Text style = {styles.titleText}>Register</Text>
+                   
                   <Slider
     style={{width: 200, height: 40}}
     minimumValue={0}
