@@ -1,7 +1,7 @@
 
 import React, { Component } from 'react';
-import {Card, Modal, Text, TextInput, TouchableHighlight, View, StyleSheet} from 'react-native'
-import {globalStyles} from './styles/global';
+import {Card, Modal, Text, TextInput, TouchableHighlight, View, StyleSheet} from 'react-native';
+
 
 
 class Login extends Component {
