@@ -11,6 +11,7 @@ import {
   StyleSheet,
 } from 'react-native';
 import Slider from '@react-native-community/slider';
+import { CheckBox } from 'react-native-elements';
 class ModalExample extends Component {
   state = {
     modalVisible: false,
@@ -41,6 +42,7 @@ class ModalExample extends Component {
 
               <View style={styles.modal}>
                 <Text style={styles.titleText}>Register</Text>
+                <CheckBox title='Click Here' checked={this.state.checked} />
                 <Slider
                   style={{width: 200, height: 40}}
                   minimumValue={0}
@@ -102,7 +104,7 @@ class ModalExample extends Component {
                   autoCapitalize="none"
                   onChangeText={this.handlePassword}
                 />
-                <View></View>
+               
                 <TouchableHighlight
                   onPress={() => {
                     this.toggleModal(!this.state.modalVisible);
