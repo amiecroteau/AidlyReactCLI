@@ -50,6 +50,7 @@ class ModalExample extends Component {
                   minimumTrackTintColor="#FFFFFF"
                   maximumTrackTintColor="#000000"
                 />
+                <Text style={styles.titleText}>Work with Children?</Text>
                 <TextInput
                   style={styles.input}
                   underlineColorAndroid="grey"
@@ -155,20 +156,13 @@ const styles = StyleSheet.create({
     padding: 10,
     marginTop: 20,
     color: 'grey',
-    fontSize: 20,
-    borderColor: 'grey',
-    borderBottomColor: 'grey',
-    backgroundColor: '#fff',
-    borderWidth: 2,
+    fontSize: 30,
     flex: 1,
     justifyContent: 'flex-start',
     maxHeight: 100,
+    alignSelf:'center',
   },
-  titleText: {
-    color: '#fff',
-    marginTop: 10,
-    fontSize: 30,
-  },
+
   paragraph: {
     marginVertical: 8,
     lineHeight: 20,

@@ -27,7 +27,7 @@ class Login extends Component {
    render(props) {
       return (
          <View style = {styles.container}>                                                                                                          
-            <Modal animationType = {"slide"} transparent = {false}
+            <Modal animationType = {"slide"} transparent = {true}
                visible = {this.state.modalVisible}
                onRequestClose = {() => { console.log("Modal has been closed.") } }>
                
@@ -43,7 +43,7 @@ class Login extends Component {
 
          <TextInput style = {styles.input}
                underlineColorAndroid = "grey"
-               placeholder = "Password"
+               placeholder = " Enter Password"
                placeholderTextColor = "grey"
                autoCapitalize = "none"
                onChangeText = {this.handlePassword}/>
@@ -85,16 +85,14 @@ const styles = StyleSheet.create ({
      
    },
    input:{
-      padding:10,
-      marginTop:20,
-      color:'grey',
+      
+     
       fontSize:20,
-      borderColor:'grey',
-      borderBottomColor:'grey',
-      backgroundColor:'#fff',
-      borderWidth:2,
+
+      
+      borderWidth:0,
       flex:1,
-      justifyContent:'flex-start',
+      justifyContent:'center',
       maxHeight:100,
    },
    titleText: {
@@ -121,6 +119,6 @@ modal: {
   flex: 1,
   alignItems: 'center',
   backgroundColor: '#94F1C1',
-  padding: 100
+
 },
 })

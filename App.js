@@ -24,8 +24,8 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
-import Login from './login';
-import Register from './register';
+import Login from './modals/login';
+import Register from './modals/register';
 
 const App: () => React$Node = () => {
   return (
